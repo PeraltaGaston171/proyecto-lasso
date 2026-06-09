@@ -104,3 +104,18 @@ h2{
     text-align: center;
     margin: 50px 0 20px 0;
 }
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content:left;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.contacto img{
+    height: 250px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+}
