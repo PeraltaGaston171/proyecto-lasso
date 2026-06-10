@@ -113,9 +113,16 @@ h2{
   gap: 15px;
 }
 
+.contacto-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
 .contacto img{
-    height: 250px;
-    width: 300px;
+    height: 150px;
+    width: 200px;
     object-fit: cover;
     border-radius: 20px;
 }
