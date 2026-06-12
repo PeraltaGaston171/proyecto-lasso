@@ -89,44 +89,13 @@ body .contexto p {
 }
 
 body .bibliografia {
-  color: white;
+  color: white !important;
 }
 body .bibliografia .subtitulo {
-  color: white;
-  text-align: center;
-  font-family: "Playwrite AU VIC Guides", cursive;
-  font-weight: 400;
-  font-style: normal;
-  clear: both;
-  padding-top: 40px;
-}
-body .bibliografia .textoconfoto {
-  padding: 0 100px;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 40px;
-  display: flow-root;
-}
-body .bibliografia .textoconfoto .texto {
-  flex: 1;
-  color: white;
-  font-family: "Arial", sans-serif;
-  text-align: justify;
-  line-height: 2;
-  margin: 0;
-}
-body .bibliografia .textoconfoto img {
-  margin-left: 30px;
-  margin-bottom: 15px;
-  float: right;
-  flex-shrink: 0;
-  height: auto;
-  width: 300px;
-  border-radius: 15px;
+  color: white !important;
 }
 body .bibliografia p {
-  color: white;
+  color: white !important;
   font-family: "Arial", sans-serif;
   text-align: justify;
   line-height: 2;
@@ -143,17 +112,10 @@ body .albunes {
   align-items: flex-start;
 }
 body .albunes div .card-body {
-  background-color: #218DA6;
+  background-color: #2CA8DE !important;
   color: white !important;
 }
 
-body h1 {
-  color: aqua;
-}
-body .giras .awt {
-  color: azure;
-  margin-top: 20px;
-}
 body .giras .algodon {
   display: flex;
   flex-direction: row;
@@ -165,11 +127,6 @@ body .giras .algodon .girasimg {
   height: 300px;
   border-radius: 10px;
   margin: 20px 0;
-}
-body .giras .qspswt {
-  color: #FF62BB;
-  text-align: right;
-  margin-right: 50px;
 }
 body .giras .qsps {
   display: flex;
@@ -196,9 +153,6 @@ body .giras .qsps p {
   line-height: 1.8;
   text-align: justify;
 }
-body .giras .mwt {
-  color: brown;
-}
 body .giras .malcriado {
   display: flex;
   flex-direction: row;
@@ -215,138 +169,21 @@ body .giras .malcriado .girasimg {
 body .contacto {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
   flex-wrap: wrap;
   gap: 15px;
 }
-body .contacto .youtube {
+body .contacto .contacto-info {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 5px;
-  padding: 15px;
-  border-radius: 20px;
-  margin-bottom: 20px;
-  background-color: #9B0F06;
-  width: 50%;
-  max-width: 750px;
-  height: 100%;
 }
-body .contacto .youtube img {
+body .contacto .contacto-info img {
   height: 150px;
-  width: 200px;
+  width: 20px;
   object-fit: cover;
   border-radius: 20px;
-}
-body .contacto .youtube a {
-  color: #000000;
-  text-decoration: none;
-  font-family: "Arial", sans-serif;
-  font-weight: bold;
-}
-body .contacto .whatsapp {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 5px;
-  padding: 15px;
-  border-radius: 20px;
-  margin-bottom: 20px;
-  background-color: #25D366;
-  width: 50%;
-  max-width: 750px;
-  height: 100%;
-}
-body .contacto .whatsapp img {
-  height: 150px;
-  width: 200px;
-  object-fit: cover;
-  border-radius: 20px;
-}
-body .contacto .whatsapp a {
-  color: #000000;
-  text-decoration: none;
-  font-family: "Arial", sans-serif;
-  font-weight: bold;
-}
-body .contacto .x {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 5px;
-  padding: 15px;
-  border-radius: 20px;
-  margin-bottom: 20px;
-  background-color: #000000;
-  width: 50%;
-  max-width: 750px;
-  height: 100%;
-}
-body .contacto .x img {
-  height: 150px;
-  width: 200px;
-  object-fit: cover;
-  border-radius: 20px;
-}
-body .contacto .x a {
-  color: #ffffff;
-  text-decoration: none;
-  font-family: "Arial", sans-serif;
-  font-weight: bold;
-}
-body .contacto .instagram {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 5px;
-  padding: 15px;
-  border-radius: 20px;
-  margin-bottom: 20px;
-  background-color: #7C39BF;
-  width: 50%;
-  max-width: 750px;
-  height: 100%;
-}
-body .contacto .instagram img {
-  height: 150px;
-  width: 200px;
-  object-fit: cover;
-  border-radius: 20px;
-}
-body .contacto .instagram a {
-  color: black;
-  text-decoration: none;
-  font-family: "Arial", sans-serif;
-  font-weight: bold;
-}
-body .contacto .spotify {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 5px;
-  padding: 15px;
-  border-radius: 20px;
-  margin-bottom: 20px;
-  background-color: #0D0A0A;
-  width: 50%;
-  max-width: 750px;
-  height: 100%;
-}
-body .contacto .spotify img {
-  height: 150px;
-  width: 200px;
-  object-fit: cover;
-  border-radius: 20px;
-}
-body .contacto .spotify a {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  font-family: "Arial", sans-serif;
-  font-weight: bold;
-}
-body div .card-body {
-  background-color: #57595B;
 }
 
 body .premioslasso ul h2 {
@@ -362,7 +199,7 @@ body .premioslasso ul .pepsi {
   margin: 21px 10px;
 }
 body .premioslasso ul .pepsi p {
-  color: white;
+  color: white !important;
   font-size: 16px;
   line-height: 1.8;
   text-align: justify;
@@ -405,4 +242,4 @@ p {
   margin: 10px 100px 50px 100px;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */

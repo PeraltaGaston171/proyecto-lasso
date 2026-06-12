@@ -1,15 +1,46 @@
 body{
     .bibliografia{
-    color: white !important;
+    color: white;
         .subtitulo{
-        color: white !important;
+        color: white;
+        text-align: center;
+        font-family: "Playwrite AU VIC Guides", cursive;
+        font-weight: 400;
+        font-style: normal;
+        clear: both;
+        padding-top: 40px;
         }
-        p{
-            color: white !important;
+        .textoconfoto{
+        padding: 0 100px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 40px;
+        display: flow-root;
+            .texto{
+            flex: 1;
+            color: white;
             font-family: 'Arial', sans-serif;
             text-align: justify;
             line-height: 2.0;
-            margin: 10px 100px 50px 100px;
+            margin: 0;
             }
+            img{
+            margin-left: 30px;
+            margin-bottom: 15px;
+            float: right;
+            flex-shrink: 0;
+            height: auto;
+            width: 300px;
+            border-radius: 15px;
+            }
+        }
+        p{
+        color: white;
+        font-family: 'Arial', sans-serif;
+        text-align: justify;
+        line-height: 2.0;
+        margin: 10px 100px 50px 100px;
+        }
     }
 }
