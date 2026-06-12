@@ -10,7 +10,9 @@ body{
     .giras{
         .backwt{
             backdrop-filter: blur(8px);
-            border-radius: 30px;
+            border-radius: 30px;width: 100%;
+            max-width: 70%;
+            margin: 0 auto 30px;
             .awt{
                 color: aqua;
                 margin-top: 20px;

@@ -189,6 +189,9 @@ body .titulodep {
 body .giras .backwt {
   backdrop-filter: blur(8px);
   border-radius: 30px;
+  width: 100%;
+  max-width: 70%;
+  margin: 0 auto 30px;
 }
 body .giras .backwt .awt {
   color: aqua;
