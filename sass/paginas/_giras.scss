@@ -1,0 +1,68 @@
+body{
+    h1{
+        color: aqua;
+    }
+    .giras{
+        .awt{
+            color: azure;
+            margin-top: 20px;
+        }
+        .algodon{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 25px 10px;
+            .girasimg{
+            width: 220px;
+            height: 300px;
+            border-radius: 10px;
+            margin: 20px 0;
+            }
+        }
+        .qspswt{
+            color: #FF62BB;
+            text-align: right;
+            margin-right: 50px;
+        }
+        .qsps{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 25px 10px;
+        gap: 5px;
+        padding: 10px;
+            .girasimg{
+            width: 220px;
+            height: 300px;
+            border-radius: 10px;
+            margin: 20px 0;
+            }
+            img{
+            border-radius: 10px;
+            order: 1;
+            flex-shrink: 0;
+            }
+            p{
+            font-size: 16px;
+            order: 2;
+            line-height: 1.8;
+            text-align: justify;
+            }
+        }
+        .mwt{
+            color: brown;
+        }
+        .malcriado{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 25px 10px;
+        .girasimg{
+        width: 220px;
+        height: 300px;
+        border-radius: 10px;
+        margin: 20px 0;
+        }
+        }
+    }
+}

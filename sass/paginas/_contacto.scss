@@ -1,0 +1,21 @@
+body{
+    .contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content:left;
+    flex-wrap: wrap;
+    gap: 15px;
+        .contacto-info{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+            img{
+            height: 150px;
+            width: 200px;
+            object-fit: cover;
+            border-radius: 20px;
+            }
+        }
+    }
+}

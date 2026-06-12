@@ -1,0 +1,32 @@
+body{
+    background-color: black;
+    margin: 0;
+    padding: 20px;
+    footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    color: white;
+    background-color: #000;
+    border-top: 1px solid #fff;
+        p{
+        color: white;
+        font-family: 'Arial', sans-serif;
+        text-align: justify;
+        line-height: 2.0;
+        margin: 10px 100px 50px 100px;
+        }
+        .redes{
+            a {
+            text-decoration: none !important;
+            }
+            img{
+            width: 40px;
+            height: 40px;
+            margin: 10px;
+            border-radius: 50%;
+            }
+        }
+    }
+}

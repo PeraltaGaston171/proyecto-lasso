@@ -1,80 +1,10 @@
-body{
-    background-color: black;
-    margin: 0;
-    padding: 20px;
-}
-
-h1{
-    text-align: center;
-    color: white;
-    font-family: 'castellar', sans-serif;
-    margin: 30px 0;
-    font-size: 100px
-}
-
-.imagenesdeinicio{
-    display: block;
-    border-radius: 10px;
-    margin: 40px auto;
-    max-width: 100%;
-}
-
-.nav-link{
-    color: white;
-    text-decoration: none;
-    font-family: 'castellar', sans-serif;
-    font-size: 18px;
-}
-
-nav{
-    background-color: black;
-    border-radius: 0 0 10px 10px;
-    padding: 10px;
-    margin-bottom: 20px;
-    border-bottom: white 3px solid;
-    position: sticky;
-    top: 0px;
-    z-index: 1000;
-}
-
-.barra{
-    display: flex;
-    flex-direction: row;
-    justify-content: Space-around;
-    height: 100%;
-    margin: 5px;
-}
-
-.contexto{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-    font-family: 'Arial', sans-serif;
-    margin: 75px 100px;
-}
-
-p{
-    color: white;
-    font-family: 'Arial', sans-serif;
-    text-align: justify;
-    line-height: 2.0;
-    margin: 10px 100px 50px 100px;
-}
-
-.imagenescollage{
-  display: flex;
-  flex-direction: row;
-  gap: 15px;
-  justify-content: center;
-  flex-wrap: wrap;
+body {
+  background-color: black;
+  margin: 0;
   padding: 20px;
-  width: 100%;
-  box-sizing: border-box;
 }
-
-footer{
-    display: flex;
+body footer {
+  display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 40px;
@@ -82,56 +12,97 @@ footer{
   background-color: #000;
   border-top: 1px solid #fff;
 }
-
-.redes a {
+body footer p {
+  color: white;
+  font-family: "Arial", sans-serif;
+  text-align: justify;
+  line-height: 2;
+  margin: 10px 100px 50px 100px;
+}
+body footer .redes a {
   text-decoration: none !important;
 }
-
-.redes img{
-    width: 40px;
-    height: 40px;
-    margin: 10px;
-    border-radius: 50%;
+body footer .redes img {
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  border-radius: 50%;
 }
 
-.imagenes{
-    flex-grow: 1;
-    flex-basis: 300px;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 8px;
+body {
+  background-color: black;
+  margin: 0;
+  padding: 20px;
 }
-
-h2{
-    color: white;
-    font-family: 'castellar', sans-serif;
-    text-align: center;
-    margin: 50px 0 20px 0;
+body header h1 {
+  text-align: center;
+  color: white;
+  font-family: "castellar", sans-serif;
+  margin: 30px 0;
+  font-size: 100px;
 }
-
-.contacto {
+body nav {
+  background-color: black;
+  border-radius: 0 0 10px 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-bottom: white 3px solid;
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+}
+body nav .barra {
+  display: flex;
+  flex-direction: row;
+  justify-content: Space-around;
+  height: 100%;
+  margin: 5px;
+}
+body nav .barra .nav-link {
+  color: white;
+  text-decoration: none;
+  font-family: "castellar", sans-serif;
+  font-size: 18px;
+}
+body div .carousel-inner .carousel-item img {
+  width: 100%;
+  height: 500px;
+}
+body .contexto {
   display: flex;
   flex-direction: column;
-  justify-content:left;
-  flex-wrap: wrap;
-  gap: 15px;
+  align-items: center;
+  color: white;
+  font-family: "Arial", sans-serif;
+  margin: 75px 100px;
+}
+body .contexto h2 {
+  font-family: "castellar", sans-serif;
+  text-align: center;
+  margin: 50px 0 20px 0;
+}
+body .contexto p {
+  font-family: "Arial", sans-serif;
+  text-align: justify;
+  line-height: 2;
+  margin: 10px 100px 50px 100px;
 }
 
-.contacto-info{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 5px;
+body .bibliografia {
+  color: white !important;
+}
+body .bibliografia .subtitulo {
+  color: white !important;
+}
+body .bibliografia p {
+  color: white !important;
+  font-family: "Arial", sans-serif;
+  text-align: justify;
+  line-height: 2;
+  margin: 10px 100px 50px 100px;
 }
 
-.contacto img{
-    height: 150px;
-    width: 200px;
-    object-fit: cover;
-    border-radius: 20px;
-}
-
-.albunes {
+body .albunes {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -140,102 +111,150 @@ h2{
   padding: 20px;
   align-items: flex-start;
 }
-
-.card-body{
+body .albunes div .card-body {
   background-color: #2CA8DE !important;
   color: white !important;
 }
 
-.carousel-inner .carousel-item img {
-  width: 100%;
-  height: 500px;
+body h1 {
+  color: aqua;
+}
+body .giras .awt {
+  color: azure;
+  margin-top: 20px;
+}
+body .giras .algodon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 25px 10px;
+}
+body .giras .algodon .girasimg {
+  width: 220px;
+  height: 300px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+body .giras .qspswt {
+  color: #FF62BB;
+  text-align: right;
+  margin-right: 50px;
+}
+body .giras .qsps {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 25px 10px;
+  gap: 5px;
+  padding: 10px;
+}
+body .giras .qsps .girasimg {
+  width: 220px;
+  height: 300px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+body .giras .qsps img {
+  border-radius: 10px;
+  order: 1;
+  flex-shrink: 0;
+}
+body .giras .qsps p {
+  font-size: 16px;
+  order: 2;
+  line-height: 1.8;
+  text-align: justify;
+}
+body .giras .mwt {
+  color: brown;
+}
+body .giras .malcriado {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 25px 10px;
+}
+body .giras .malcriado .girasimg {
+  width: 220px;
+  height: 300px;
+  border-radius: 10px;
+  margin: 20px 0;
 }
 
-.algodon{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 25px 10px;
+body .contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+body .contacto .contacto-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+body .contacto .contacto-info img {
+  height: 150px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 20px;
 }
 
-.qsps{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 25px 10px;
-    gap: 5px;
-    padding: 10px;
+body .premioslasso ul h2 {
+  color: white;
+  font-family: "castellar", sans-serif;
+  text-align: center;
+  margin: 50px 0 20px 0;
+}
+body .premioslasso ul .pepsi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 21px 10px;
+}
+body .premioslasso ul .pepsi p {
+  color: white;
+  font-size: 16px;
+  line-height: 1.8;
+  text-align: justify;
+  max-width: 400px;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+body .premioslasso ul .pepsi img {
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+body .premioslasso ul .grammy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 21px 10px;
+}
+body .premioslasso ul .grammy p {
+  font-size: 16px;
+  line-height: 1.8;
+  text-align: justify;
+  max-width: 400px;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+body .premioslasso ul .grammy img {
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+  margin: 20px 0;
 }
 
-.qsps img{
-    border-radius: 10px;
-    order: 1;
-    flex-shrink: 0;
+p {
+  color: white;
+  font-family: "Arial", sans-serif;
+  text-align: justify;
+  line-height: 2;
+  margin: 10px 100px 50px 100px;
 }
 
-.qsps p{
-    font-size: 16px;
-    order: 2;
-    line-height: 1.8;
-    text-align: justify;
-}
-
-.malcriado{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 25px 10px;
-}
-
-.girasimg{
-    width: 220px;
-    height: 300px;
-    border-radius: 10px;
-    margin: 20px 0;
-}
-
-.pepsi{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 21px 10px;
-}
-
-.pepsi p{
-    font-size: 16px;
-    line-height: 1.8;
-    text-align: justify;
-    max-width: 400px;
-    margin-top: 0;
-    margin-bottom: 12px;
-}
-
-.pepsi img{
-    width: 50%;
-    height: auto;
-    border-radius: 10px;
-    margin: 20px 0;
-}
-
-.grammy{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 21px 10px;
-}
-
-.grammy p{
-    font-size: 16px;
-    line-height: 1.8;
-    text-align: justify;
-    max-width: 400px;
-    margin-top: 0;
-    margin-bottom: 12px;
-}
-
-.grammy img{
-    width: 50%;
-    height: auto;
-    border-radius: 10px;
-    margin: 20px 0;
-}
+/*# sourceMappingURL=style.css.map */
