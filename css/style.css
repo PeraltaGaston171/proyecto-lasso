@@ -4,10 +4,12 @@ body {
   padding: 20px;
 }
 body footer {
+  margin-top: auto;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 40px;
+  padding: 20px 40px;
   color: white;
   background-color: #000;
   border-top: 1px solid #fff;
@@ -30,16 +32,21 @@ body footer .redes img {
 }
 
 body {
-  background-color: black;
-  margin: 0;
-  padding: 20px;
+  backdrop-filter: blur(10px);
+}
+body header {
+  text-align: center;
+  padding: 3px 0;
+  width: 100%;
 }
 body header h1 {
-  text-align: center;
-  color: white;
-  font-family: "castellar", sans-serif;
-  margin: 30px 0;
-  font-size: 100px;
+  font-family: "Sedgwick Ave Display", cursive;
+  font-size: 5rem;
+  font-style: normal;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: -4px;
+  transform: rotate(-3deg);
 }
 body nav {
   background-color: black;
@@ -64,22 +71,41 @@ body nav .barra .nav-link {
   font-family: "castellar", sans-serif;
   font-size: 18px;
 }
+
+body {
+  margin: 0;
+  padding: 20px;
+  background-color: #f8f9fa;
+  background-image: url("../img/063ebd2c1d20a2884068335830959a2b.jpg");
+  background-repeat: repeat;
+  background-size: 50px;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 20px;
+}
+body div .carousel-inner {
+  max-width: 70rem;
+  margin: 0 auto;
+}
 body div .carousel-inner .carousel-item img {
   width: 100%;
   height: 500px;
+  object-fit: cover;
 }
 body .contexto {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: white;
   font-family: "Arial", sans-serif;
   margin: 75px 100px;
+  background-color: #f8f9fa;
+  border-radius: 20px;
 }
 body .contexto h2 {
   font-family: "castellar", sans-serif;
   text-align: center;
   margin: 50px 0 20px 0;
+  font-weight: bold;
 }
 body .contexto p {
   font-family: "Arial", sans-serif;
@@ -88,11 +114,18 @@ body .contexto p {
   margin: 10px 100px 50px 100px;
 }
 
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
 body .bibliografia {
-  color: white;
+  color: black;
+  background-color: #f8f9fa;
+  border-radius: 50px;
 }
 body .bibliografia .subtitulo {
-  color: white;
   text-align: center;
   font-family: "Playwrite AU VIC Guides", cursive;
   font-weight: 400;
@@ -110,7 +143,6 @@ body .bibliografia .textoconfoto {
 }
 body .bibliografia .textoconfoto .texto {
   flex: 1;
-  color: white;
   font-family: "Arial", sans-serif;
   text-align: justify;
   line-height: 2;
@@ -126,7 +158,6 @@ body .bibliografia .textoconfoto img {
   border-radius: 15px;
 }
 body .bibliografia p {
-  color: white;
   font-family: "Arial", sans-serif;
   text-align: justify;
   line-height: 2;
@@ -147,31 +178,40 @@ body .albunes div .card-body {
   color: white !important;
 }
 
-body h1 {
-  color: aqua;
+body .titulodep {
+  color: black;
+  background-color: #f8f9fa;
+  border-radius: 20px;
+  margin-right: 1px;
+  font-family: "castellar", sans-serif;
+  text-align: center;
 }
-body .giras .awt {
-  color: azure;
+body .giras .backwt {
+  backdrop-filter: blur(8px);
+  border-radius: 30px;
+}
+body .giras .backwt .awt {
+  color: aqua;
   margin-top: 20px;
 }
-body .giras .algodon {
+body .giras .backwt .algodon {
   display: flex;
   flex-direction: row;
   align-items: center;
   margin: 25px 10px;
 }
-body .giras .algodon .girasimg {
+body .giras .backwt .algodon .girasimg {
   width: 220px;
   height: 300px;
   border-radius: 10px;
   margin: 20px 0;
 }
-body .giras .qspswt {
+body .giras .backwt .qspswt {
   color: #FF62BB;
   text-align: right;
   margin-right: 50px;
 }
-body .giras .qsps {
+body .giras .backwt .qsps {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -179,33 +219,33 @@ body .giras .qsps {
   gap: 5px;
   padding: 10px;
 }
-body .giras .qsps .girasimg {
+body .giras .backwt .qsps .girasimg {
   width: 220px;
   height: 300px;
   border-radius: 10px;
   margin: 20px 0;
 }
-body .giras .qsps img {
+body .giras .backwt .qsps img {
   border-radius: 10px;
   order: 1;
   flex-shrink: 0;
 }
-body .giras .qsps p {
+body .giras .backwt .qsps p {
   font-size: 16px;
   order: 2;
   line-height: 1.8;
   text-align: justify;
 }
-body .giras .mwt {
+body .giras .backwt .mwt {
   color: brown;
 }
-body .giras .malcriado {
+body .giras .backwt .malcriado {
   display: flex;
   flex-direction: row;
   align-items: center;
   margin: 25px 10px;
 }
-body .giras .malcriado .girasimg {
+body .giras .backwt .malcriado .girasimg {
   width: 220px;
   height: 300px;
   border-radius: 10px;
@@ -350,8 +390,7 @@ body div .card-body {
 }
 
 body .premioslasso ul h2 {
-  color: white;
-  font-family: "castellar", sans-serif;
+  color: black;
   text-align: center;
   margin: 50px 0 20px 0;
 }
@@ -362,7 +401,6 @@ body .premioslasso ul .pepsi {
   margin: 21px 10px;
 }
 body .premioslasso ul .pepsi p {
-  color: white;
   font-size: 16px;
   line-height: 1.8;
   text-align: justify;
@@ -398,11 +436,19 @@ body .premioslasso ul .grammy img {
 }
 
 p {
-  color: white;
+  color: black;
   font-family: "Arial", sans-serif;
   text-align: justify;
   line-height: 2;
   margin: 10px 100px 50px 100px;
+}
+
+h2 {
+  font-family: "Sedgwick Ave Display", cursive;
+}
+
+html {
+  height: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

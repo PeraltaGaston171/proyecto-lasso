@@ -1,46 +1,50 @@
 body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
     .bibliografia{
-    color: white;
+        color: black;
+        background-color: #f8f9fa;
+        border-radius: 50px;
+
         .subtitulo{
-        color: white;
-        text-align: center;
-        font-family: "Playwrite AU VIC Guides", cursive;
-        font-weight: 400;
-        font-style: normal;
-        clear: both;
-        padding-top: 40px;
+            text-align: center;
+            font-family: "Playwrite AU VIC Guides", cursive;
+            font-weight: 400;
+            font-style: normal;
+            clear: both;
+            padding-top: 40px;
         }
         .textoconfoto{
-        padding: 0 100px;
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        gap: 40px;
-        display: flow-root;
+            padding: 0 100px;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 40px;
+            display: flow-root;
             .texto{
-            flex: 1;
-            color: white;
-            font-family: 'Arial', sans-serif;
-            text-align: justify;
-            line-height: 2.0;
-            margin: 0;
+                flex: 1;
+                font-family: 'Arial', sans-serif;
+                text-align: justify;
+                line-height: 2.0;
+                margin: 0;
             }
             img{
-            margin-left: 30px;
-            margin-bottom: 15px;
-            float: right;
-            flex-shrink: 0;
-            height: auto;
-            width: 300px;
-            border-radius: 15px;
+                margin-left: 30px;
+                margin-bottom: 15px;
+                float: right;
+                flex-shrink: 0;
+                height: auto;
+                width: 300px;
+                border-radius: 15px;
             }
         }
         p{
-        color: white;
-        font-family: 'Arial', sans-serif;
-        text-align: justify;
-        line-height: 2.0;
-        margin: 10px 100px 50px 100px;
+            font-family: 'Arial', sans-serif;
+            text-align: justify;
+            line-height: 2.0;
+            margin: 10px 100px 50px 100px;
         }
     }
 }

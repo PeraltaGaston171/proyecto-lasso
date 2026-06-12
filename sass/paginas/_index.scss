@@ -1,66 +1,45 @@
 body{
-    background-color: black;
     margin: 0;
     padding: 20px;
-    header{
-        h1{
-        text-align: center;
-        color: white;
-        font-family: 'castellar', sans-serif;
-        margin: 30px 0;
-        font-size: 100px;
-        }
-    }
-    nav{
-    background-color: black;
-    border-radius: 0 0 10px 10px;
-    padding: 10px;
-    margin-bottom: 20px;
-    border-bottom: white 3px solid;
-    position: sticky;
-    top: 0px;
-    z-index: 1000;
-        .barra{
-        display: flex;
-        flex-direction: row;
-        justify-content: Space-around;
-        height: 100%;
-        margin: 5px;
-            .nav-link{
-            color: white;
-            text-decoration: none;
-            font-family: 'castellar', sans-serif;
-            font-size: 18px;
-            }
-        }   
-    }
+    background-color: #f8f9fa;
+    background-image: url("../img/063ebd2c1d20a2884068335830959a2b.jpg");
+    background-repeat: repeat; 
+    background-size: 50px;
+    background-attachment: fixed; 
+    margin: 0;
+    padding: 20px;
     div{
         .carousel-inner{
+            max-width: 70rem;
+            margin: 0 auto;
             .carousel-item{
                 img {
                 width: 100%;
                 height: 500px;
+                object-fit: cover;
                 }
             } 
         } 
     }
     .contexto{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-    font-family: 'Arial', sans-serif;
-    margin: 75px 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Arial', sans-serif;
+        margin: 75px 100px;
+        background-color: #f8f9fa;
+        border-radius: 20px;
         h2{
-        font-family: 'castellar', sans-serif;
-        text-align: center;
-        margin: 50px 0 20px 0;
+            font-family: 'castellar', sans-serif;
+            text-align: center;
+            margin: 50px 0 20px 0;
+            font-weight: bold;
         }
         p{
-        font-family: 'Arial', sans-serif;
-        text-align: justify;
-        line-height: 2.0;
-        margin: 10px 100px 50px 100px;
+            font-family: 'Arial', sans-serif;
+            text-align: justify;
+            line-height: 2.0;
+            margin: 10px 100px 50px 100px;
         }
     }
 
