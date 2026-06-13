@@ -6,8 +6,8 @@ body{
     background-repeat: repeat; 
     background-size: 50px;
     background-attachment: fixed; 
-    margin: 0;
-    padding: 20px;
+    overflow-x: hidden;
+    width: 100%;
     div{
         .carousel-inner{
             max-width: 70rem;

@@ -156,8 +156,8 @@ body {
   background-repeat: repeat;
   background-size: 50px;
   background-attachment: fixed;
-  margin: 0;
-  padding: 20px;
+  overflow-x: hidden;
+  width: 100%;
 }
 body div .carousel-inner {
   max-width: 70rem;
@@ -351,6 +351,7 @@ body .giras .backwt .awt {
 @media (max-width: 390px) {
   body .giras .backwt .awt {
     text-align: left;
+    margin-right: 0;
   }
 }
 body .giras .backwt .algodon {
@@ -359,9 +360,9 @@ body .giras .backwt .algodon {
   align-items: center;
   margin: 25px 10px;
 }
-@media (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 768px) {
   body .giras .backwt .algodon {
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     gap: 30px;
     padding: 10px;
@@ -378,11 +379,18 @@ body .giras .backwt .algodon p {
   line-height: 1.8;
   text-align: justify;
 }
-@media (max-width: 768px) {
+@media (max-width: 768) {
   body .giras .backwt .algodon p {
-    width: 65%;
+    width: 95%;
     font-size: 15px;
-    line-height: 1.6;
+    line-height: 2;
+  }
+}
+@media (max-width: 390px) {
+  body .giras .backwt .algodon p {
+    width: 95%;
+    font-size: 15px;
+    line-height: 2;
   }
 }
 body .giras .backwt .algodon .girasimg {
@@ -394,7 +402,7 @@ body .giras .backwt .algodon .girasimg {
 @media (max-width: 768px) {
   body .giras .backwt .algodon .girasimg {
     width: 30%;
-    max-width: 180px;
+    max-width: 200px;
     height: auto;
     margin: 0;
   }
@@ -424,7 +432,7 @@ body .giras .backwt .qspswt {
 }
 body .giras .backwt .qsps {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   align-items: center;
   margin: 25px 10px;
   gap: 5px;
@@ -433,6 +441,7 @@ body .giras .backwt .qsps {
 @media (max-width: 768px) {
   body .giras .backwt .qsps {
     gap: 20px;
+    flex-direction: column;
   }
 }
 @media (max-width: 390px) {
@@ -449,14 +458,17 @@ body .giras .backwt .girasimg {
 }
 @media (max-width: 768px) {
   body .giras .backwt .girasimg {
-    width: 180px;
+    width: 30%;
+    max-width: 200px;
     height: auto;
+    margin: 0;
   }
 }
 @media (max-width: 390px) {
   body .giras .backwt .girasimg {
     width: 80%;
     height: auto;
+    margin: 10px 0;
   }
 }
 body .giras .backwt .girasimg img {
@@ -509,7 +521,10 @@ body .giras .backwt .malcriado {
 }
 @media (max-width: 768px) {
   body .giras .backwt .malcriado {
-    gap: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 10px;
   }
 }
 @media (max-width: 390px) {
@@ -526,14 +541,17 @@ body .giras .backwt .malcriado .girasimg {
 }
 @media (max-width: 768px) {
   body .giras .backwt .malcriado .girasimg {
-    width: 180px;
+    width: 30%;
+    max-width: 200px;
     height: auto;
+    margin: 0;
   }
 }
 @media (max-width: 390px) {
   body .giras .backwt .malcriado .girasimg {
     width: 80%;
     height: auto;
+    margin: 10px 0;
   }
 }
 
@@ -831,15 +849,8 @@ p {
 }
 @media (max-width: 390px) {
   p {
-    text-align: left;
-    width: 95%;
-  }
-}
-@media (max-width: 768px) {
-  p {
-    width: 65%;
-    font-size: 15px;
-    line-height: 1.6;
+    text-align: justify;
+    width: 100%;
   }
 }
 
