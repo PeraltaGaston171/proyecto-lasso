@@ -1,134 +1,184 @@
 body{
     .contacto {
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 15px;
         .youtube{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 5px;
-        padding: 15px;
-        border-radius: 20px;
-        margin-bottom: 20px;
-        background-color: #9B0F06;
-        width: 50%;
-        max-width: 750px;
-        height: 100%;
-            img{
-            height: 150px;
-            width: 200px;
-            object-fit: cover;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 5px;
+            padding: 15px;
             border-radius: 20px;
+            margin-bottom: 20px;
+            background-color: #9B0F06;
+            width: 50%;
+            max-width: 750px;
+            height: 100%;
+            @media (max-width: 390px) {
+                flex-direction: column; // 🚀 Pasa a vertical (logo arriba, texto abajo)
+                width: 90%;             // Se estira a los costados
+                gap: 10px;
+                text-align: center;
             }
-            a {
-            color: #000000;
-            text-decoration: none;
-            font-family: 'Arial', sans-serif;
-            font-weight: bold;
+            img{
+                height: 150px;
+                width: 200px;
+                object-fit: cover;
+                border-radius: 20px;
+                @media (max-width: 390px) {
+                    width: 80%;
+                    height: auto;
+                }
             }
+                a {
+                    color: #000000;
+                    text-decoration: none;
+                    font-family: 'Arial', sans-serif;
+                    font-weight: bold;
+                }
         }
-        .whatsapp{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 5px;
-        padding: 15px;
-        border-radius: 20px;
-        margin-bottom: 20px;
-        background-color: #25D366;
-        width: 50%;
-        max-width: 750px;
-        height: 100%;
-            img{
-            height: 150px;
-            width: 200px;
-            object-fit: cover;
+            .whatsapp{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 5px;
+            padding: 15px;
             border-radius: 20px;
+            margin-bottom: 20px;
+            background-color: #25D366;
+            width: 50%;
+            max-width: 750px;
+            height: 100%;
+            @media (max-width: 390px) {
+                flex-direction: column;
+                width: 90%;
+                gap: 10px;
+                text-align: center;
+            }
+            img{
+                height: 150px;
+                width: 200px;
+                object-fit: cover;
+                border-radius: 20px;
+                @media (max-width: 390px) {
+                    width: 80%;
+                    height: auto;
+                    }
             }
             a {
-            color: #000000;
-            text-decoration: none;
-            font-family: 'Arial', sans-serif;
-            font-weight: bold;
+                color: #000000;
+                text-decoration: none;
+                font-family: 'Arial', sans-serif;
+                font-weight: bold;
             }
         }
         .x{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 5px;
-        padding: 15px;
-        border-radius: 20px;
-        margin-bottom: 20px;
-        background-color: #000000;
-        width: 50%;
-        max-width: 750px;
-        height: 100%;
-            img{
-            height: 150px;
-            width: 200px;
-            object-fit: cover;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 5px;
+            padding: 15px;
             border-radius: 20px;
+            margin-bottom: 20px;
+            background-color: #000000;
+            width: 50%;
+            max-width: 750px;
+            height: 100%;
+            @media (max-width: 390px) {
+                flex-direction: column;
+                width: 90%;
+                gap: 10px;
+                text-align: center;
+            }
+            img{
+                height: 150px;
+                width: 200px;
+                object-fit: cover;
+                border-radius: 20px;
+                @media (max-width: 390px) {
+                    width: 80%;
+                    height: auto;
+                }
             }
             a{
-            color: #ffffff;
-            text-decoration: none;
-            font-family: 'Arial', sans-serif;
-            font-weight: bold;
+                color: #ffffff;
+                text-decoration: none;
+                font-family: 'Arial', sans-serif;
+                font-weight: bold;
             }
         }
         .instagram{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 5px;
-        padding: 15px;
-        border-radius: 20px;
-        margin-bottom: 20px;
-        background-color: #7C39BF;
-        width: 50%;
-        max-width: 750px;
-        height: 100%;
-            img{
-            height: 150px;
-            width: 200px;
-            object-fit: cover;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 5px;
+            padding: 15px;
             border-radius: 20px;
+            margin-bottom: 20px;
+            background-color: #7C39BF;
+            width: 50%;
+            max-width: 750px;
+            height: 100%;
+            @media (max-width: 390px) {
+                flex-direction: column;
+                width: 90%;
+                gap: 10px;
+                text-align: center;
+            }
+            img{
+                height: 150px;
+                width: 200px;
+                object-fit: cover;
+                border-radius: 20px;
+                @media (max-width: 390px) {
+                    width: 80%;
+                    height: auto;
+                }
             }
             a{
-            color: black;
-            text-decoration: none;
-            font-family: 'Arial', sans-serif;
-            font-weight: bold;
-            }
+                color: black;
+                text-decoration: none;
+                font-family: 'Arial', sans-serif;
+                font-weight: bold;
+                }
         }
         .spotify{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 5px;
-        padding: 15px;
-        border-radius: 20px;
-        margin-bottom: 20px;
-        background-color: #0D0A0A;
-        width: 50%;
-        max-width: 750px;
-        height: 100%;
-            img{
-            height: 150px;
-            width: 200px;
-            object-fit: cover;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 5px;
+            padding: 15px;
             border-radius: 20px;
+            margin-bottom: 20px;
+            background-color: #0D0A0A;
+            width: 50%;
+            max-width: 750px;
+            height: 100%;
+            @media (max-width: 390px) {
+                flex-direction: column;
+                width: 90%;
+                gap: 10px;
+                text-align: center;
+            }
+            img{
+                height: 150px;
+                width: 200px;
+                object-fit: cover;
+                border-radius: 20px;
+                @media (max-width: 390px) {
+                    width: 80%;
+                    height: auto;
+                }
             }
             a{
-            color: rgb(255, 255, 255);
-            text-decoration: none;
-            font-family: 'Arial', sans-serif;
-            font-weight: bold;
+                color: rgb(255, 255, 255);
+                text-decoration: none;
+                font-family: 'Arial', sans-serif;
+                font-weight: bold;
             }
         }
     }

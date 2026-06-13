@@ -7,7 +7,9 @@ body{
         color: black;
         background-color: #f8f9fa;
         border-radius: 50px;
-
+        @media (max-width: 390px) {
+            border-radius: 20px;
+        }
         .subtitulo{
             text-align: center;
             font-family: "Playwrite AU VIC Guides", cursive;
@@ -23,6 +25,13 @@ body{
             align-items: flex-start;
             gap: 40px;
             display: flow-root;
+            @media (max-width: 390px) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 0 15px;
+                gap: 20px;
+            }
             .texto{
                 flex: 1;
                 font-family: 'Arial', sans-serif;
@@ -38,6 +47,11 @@ body{
                 height: auto;
                 width: 300px;
                 border-radius: 15px;
+                @media (max-width: 390px) {
+                    float: none;
+                    margin: 15px auto;
+                    width: 260px;
+                }
             }
         }
         p{
@@ -45,6 +59,10 @@ body{
             text-align: justify;
             line-height: 2.0;
             margin: 10px 100px 50px 100px;
+            @media (max-width: 390px) {
+                margin: 10px 15px 30px 15px; // Chau 100px matadores
+                line-height: 1.6;
+            }
         }
     }
 }
