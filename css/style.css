@@ -14,12 +14,28 @@ body footer {
   background-color: #000;
   border-top: 1px solid #fff;
 }
+@media (max-width: 390px) {
+  body footer {
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px 15px;
+  }
+}
 body footer p {
   color: white;
   font-family: "Arial", sans-serif;
   text-align: justify;
   line-height: 2;
   margin: 10px 100px 50px 100px;
+}
+@media (max-width: 390px) {
+  body footer p {
+    margin: 0;
+    text-align: center;
+    line-height: 1.4;
+    font-size: 14px;
+  }
 }
 body footer .redes a {
   text-decoration: none !important;
@@ -29,6 +45,11 @@ body footer .redes img {
   height: 40px;
   margin: 10px;
   border-radius: 50%;
+}
+@media (max-width: 390px) {
+  body footer .redes img {
+    margin: 5px;
+  }
 }
 
 body {
@@ -48,6 +69,11 @@ body header h1 {
   letter-spacing: -4px;
   transform: rotate(-3deg);
 }
+@media (max-width: 390px) {
+  body header h1 {
+    font-size: 3rem;
+  }
+}
 body nav {
   background-color: black;
   border-radius: 0 0 10px 10px;
@@ -58,10 +84,16 @@ body nav {
   top: 0px;
   z-index: 1000;
 }
+body nav .menu-check {
+  display: none;
+}
+body nav .menu-icono {
+  display: none;
+}
 body nav .barra {
   display: flex;
   flex-direction: row;
-  justify-content: Space-around;
+  justify-content: space-around;
   height: 100%;
   margin: 5px;
 }
@@ -70,6 +102,50 @@ body nav .barra .nav-link {
   text-decoration: none;
   font-family: "castellar", sans-serif;
   font-size: 18px;
+}
+body nav .barra .nav-link :hover {
+  color: #00ffff;
+}
+@media (max-width: 390px) {
+  body nav {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  body nav .menu-icono {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+  }
+  body nav .menu-icono span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+  }
+  body nav .barra {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+    margin-top: 15px;
+  }
+  body nav .barra .nav-link {
+    font-size: 16px;
+    padding: 5px 0;
+    width: 100%;
+    text-align: center;
+  }
+  body nav .menu-check:checked ~ .barra {
+    display: flex;
+  }
 }
 
 body {
@@ -92,6 +168,11 @@ body div .carousel-inner .carousel-item img {
   height: 500px;
   object-fit: cover;
 }
+@media (max-width: 390px) {
+  body div .carousel-inner .carousel-item img {
+    height: 250px;
+  }
+}
 body .contexto {
   display: flex;
   flex-direction: column;
@@ -101,17 +182,35 @@ body .contexto {
   background-color: #f8f9fa;
   border-radius: 20px;
 }
+@media (max-width: 390px) {
+  body .contexto {
+    margin: 30px 10px;
+    padding: 15px;
+  }
+}
 body .contexto h2 {
   font-family: "castellar", sans-serif;
   text-align: center;
   margin: 50px 0 20px 0;
   font-weight: bold;
 }
+@media (max-width: 390px) {
+  body .contexto h2 {
+    font-size: 1.5rem;
+    margin: 20px 0 10px 0;
+  }
+}
 body .contexto p {
   font-family: "Arial", sans-serif;
   text-align: justify;
   line-height: 2;
   margin: 10px 100px 50px 100px;
+}
+@media (max-width: 390px) {
+  body .contexto p {
+    margin: 10px 10px 20px 10px;
+    line-height: 1.6;
+  }
 }
 
 body {

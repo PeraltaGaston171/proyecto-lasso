@@ -1,41 +1,92 @@
 body{
     backdrop-filter: blur(10px);
-        header{
-            text-align: center;
-            padding: 3px 0;
-            width: 100%;
-            h1{
-                font-family: "Sedgwick Ave Display", cursive;
-                font-size: 5rem;
-                font-style: normal;
-                color: black;
-                text-transform: uppercase;
-                letter-spacing: -4px;
-                transform: rotate(-3deg);
+    header{
+        text-align: center;
+        padding: 3px 0;
+        width: 100%;
+        h1{
+            font-family: "Sedgwick Ave Display", cursive;
+            font-size: 5rem;
+            font-style: normal;
+            color: black;
+            text-transform: uppercase;
+            letter-spacing: -4px;
+            transform: rotate(-3deg);
+            @media (max-width: 390px) {
+                font-size: 3rem;
             }
         }
-        nav{
-                background-color: black;
-                border-radius: 0 0 10px 10px;
-                padding: 10px;
-                margin-bottom: 20px;
-                border-bottom: white 3px solid;
-                position: sticky;
-                top: 0px;
-                z-index: 1000;
-            .barra{
-                display: flex;
-                flex-direction: row;
-                justify-content: Space-around;
-                height: 100%;
-                margin: 5px;
-                .nav-link{
-                    color: white;
-                    text-decoration: none;
-                    font-family: 'castellar', sans-serif;
-                    font-size: 18px;
-                }
-            }   
+    }
+    nav{
+        background-color: black;
+        border-radius: 0 0 10px 10px;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-bottom: white 3px solid;
+        position: sticky;
+        top: 0px;
+        z-index: 1000;
+        .menu-check {
+            display: none;
         }
-    
+        .menu-icono {
+            display: none;
+        }
+        .barra {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            height: 100%;
+            margin: 5px;
+            .nav-link {
+            color: white;
+            text-decoration: none;
+            font-family: 'castellar', sans-serif;
+            font-size: 18px;
+                & :hover {
+                    color: #00ffff;
+                }
+            }
+        }
+        @media (max-width: 390px) {
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            .menu-icono {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 30px;
+                height: 20px;
+                cursor: pointer;
+                    span {
+                        display: block;
+                        height: 3px;
+                        width: 100%;
+                        background-color: white;
+                        border-radius: 3px;
+                        transition: all 0.3s ease;
+                    }
+                }
+            .barra {
+                display: none;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                gap: 15px;
+                margin-top: 15px;
+                .nav-link {
+                    font-size: 16px;
+                    padding: 5px 0;
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+            & .menu-check:checked ~ .barra {
+                display: flex;
+            }
+        }
+    }   
 }
+    
